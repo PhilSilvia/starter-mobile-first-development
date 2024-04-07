@@ -27,3 +27,42 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+.brown-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #5c4f41;
+}
+
+img {
+  width: 100%;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  .brown-box {
+    flex-direction: row;
+  }
+}
